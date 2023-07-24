@@ -1,0 +1,34 @@
+<div class="Registration Form">
+
+<form class="register-container" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)">
+    <h2>Registration Form</h2>
+  <mat-form-field>
+    
+    <input matInput placeholder="Email" type="email" name="email" [(ngModel)]="user.email"  >
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="UserName" type="text" name="userName" [(ngModel)]="user.name" required >
+    
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Address" type="text" name="address" [(ngModel)]="user.address" >
+    </textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Accountno" type="number" name="accountno" [(ngModel)]="user.accountno" >
+    
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Mobileno" type="text" name="mobileno" [(ngModel)]="user.mobileno" minlength="10" >
+    
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Password" type="password" name="password" [(ngModel)]="user.password" required >
+    
+  </mat-form-field>
+
+  <button mat-raised-button class="btn btn-primary" type="submit"  [disabled]="registrationForm.invalid" >Register</button>
+</form>
+</div>

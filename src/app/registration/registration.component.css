@@ -1,0 +1,19 @@
+.Registration Form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: bisque;
+    width: 50vw;
+    margin-left: 25%;
+    align-content: center;
+    
+}
+.register-container
+{
+    width: 70px;
+    background-image: url(../../assets/login_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

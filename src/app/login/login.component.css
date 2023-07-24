@@ -1,0 +1,6 @@
+.login-container
+{
+    background-image: url("../../assets/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
